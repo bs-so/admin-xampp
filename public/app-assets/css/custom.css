@@ -1,0 +1,635 @@
+/*========================================================
+        Custom(RedSpider)
+=========================================================*/
+
+html body {
+	font-family: ヒラギノ角ゴ Pro,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,Osaka,ＭＳ Ｐゴシック,MS PGothic,sans-serif !important;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.none-list-style {
+	list-style: none;
+}
+
+.upload-images {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.upload-images li {
+	list-style: none;
+	display:inline-block;
+	width: auto;
+	height: auto;
+	border-radius: 4px;
+	color: white;
+	text-decoration: none;
+	margin: 4px 2px;
+}
+
+.trader-img {
+	width: 100% !important;
+	height: auto;
+}
+
+.trader-img[disabled]
+{
+    opacity: 0.3 !important;
+}
+
+.width-100p {
+	width: 100% !important;
+}
+
+.width-200 {
+	width: 200px; !important;
+}
+
+.inline-block {
+	display: inline !important;
+	width: 80% !important;
+}
+
+.fixed-text {
+	height: 100px;
+	overflow: hidden;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.span-right {
+	margin-left: auto;
+}
+
+.traders-img {
+	width: 100%;
+	height: 150px;
+}
+
+.news-img {
+	width: 100%;
+	height: 350px;
+}
+
+.centered-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.trader-item {
+    min-height: 200px;
+    height: 100%;
+    padding: 2px !important;
+}
+.trader-item .main-area {
+    border: 1px solid #aaa;
+    padding: 4px;
+}
+
+.data-input {
+	display: none;
+}
+.show-none {
+	display: none;
+}
+.show-block {
+	display: block;
+}
+
+.input-label {
+	width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	cursor: pointer;
+}
+
+.input-label:hover {
+	background-color: lightgray;
+}
+
+.img-preview {
+	width: 100%;
+}
+.img-preview-div {
+	min-width: 320px !important;
+	max-width: 320px !important;
+}
+
+.filter-grayscale {
+	filter: grayscale(1);
+}
+
+.note-btn {
+	font-size: 15px;
+}
+
+.analytics-table {
+	background: white;
+}
+
+.analytics-table .spacer {
+    border: none;
+    padding: 0;
+    min-width: 2px;
+}
+
+.analytics-table th {
+	min-width: 100px;
+}
+.analytics-table .category {
+	min-width: 120px;
+}
+
+.analytics-table .trader {
+	background: #FFEAFC;
+}
+
+.analytics-table .sunday {
+	background: #FFECEC;
+}
+.analytics-table .saturday {
+	background: #EEEDFF;
+}
+
+.mb-mobile-2 {
+}
+
+.wallets-list-radio {
+	margin-left: 20px;
+	margin-right: 14px;
+}
+
+.wallets-list-status {
+	margin-right: 14px;
+}
+
+.height-50 {
+	height: 50px !important;
+}
+
+.navi-custom-header {
+	margin-top: 15px !important;
+	margin-bottom: 0px !important;
+}
+.navi-custom-header span {
+	text-decoration: underline;
+	color: #96f190;
+}
+
+.link {
+	color: #7367F0 !important;
+}
+.link:hover {
+	color: #7367F0 !important;
+	text-decoration: underline;
+}
+
+.rate-panel {
+    padding: 0.7rem 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rate-panel .user-nav{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    float: left;
+    margin-right: 0.8rem;
+}
+
+.rate-panel .user-nav .user-name {
+    display: inline-block;
+    margin-bottom: 0.435rem;
+    margin-left: 0.2rem;
+	color: #FFFFFF !important;
+}
+.rate-panel .user-nav .user-status {
+	font-size: smaller;
+	color: #FFFFFF !important;
+}
+
+.main-img-item {
+	width: 160px !important;
+}
+
+.slide-img-item {
+	width: 160px !important;
+}
+
+#mainimagePreview, #slideimagePreview {
+	width: 100%;
+}
+
+#mail-block {
+	height: fit-content;
+	width: 100%;
+	position: relative;
+}
+	
+#mail-block::after {
+	background: repeating-linear-gradient(45deg, #fff , #fff 10px, #3C7AB8 0, #3C7AB8 20px, #fff 0, #fff 30px, #CB2C4B 0, #CB2C4B 40px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	z-index: 0;
+}
+		
+#mail-block::before {
+	background-color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	content: "";
+	z-index: 1;
+	border-radius: 20px;
+}
+
+ul.trader_mail_list {
+	-webkit-column-count: 4;
+    -moz-column-count: 4;
+	column-count: 4;
+	list-style-type: none;
+	padding-left: 0;
+}
+			
+
+@media screen and (max-width: 575px) {
+	.mb-mobile-2 {
+		margin-bottom: 14px;
+	}
+
+	.img-preview-div {
+		min-width: 80% !important;
+		max-width: 80% !important;
+		margin: 0 auto;
+	}
+
+	.traders-btn-groups {
+		margin-top: 10px !important;
+		text-align: center !important;
+	}
+
+	.diary-table td {
+		min-width: 100px;
+	}
+
+	.btn-groups button, a {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 2048px) {
+	.discount-header {
+		padding-bottom: 5px !important;
+	}
+
+	.discount-status {
+		padding-top: 3px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 3px;
+		margin-right: 6px;
+	}
+
+	.discount-title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.discount-price-group {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.discount-price {
+		padding-top: 10px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		text-align: left;
+	}
+
+	.discount-kakaku-img {
+		width: 50px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.discount-kakaku-info {
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+	.discount-kakaku-info small {
+		font-size: 10px;
+	}
+	.discount-kakaku-info span {
+		padding-top: 12px;
+		font-weight: bold;
+	}
+
+	.discount-expiration {
+		margin-top: 10px;
+		margin-left: 6px;
+		margin-right: 6px;
+		height: 50px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		color: #000;
+	}
+	.discount-expiration div {
+		display: table-cell;
+		vertical-align: middle;
+		height: 50px;
+		padding: 0px 10px;
+	}
+	.discount-expiration .label {
+		min-width: 60px;
+		border-right: 1px dotted #CCC;
+		color: inherit;
+		font-size: 14px;
+		font-weight: inherit;
+		text-align: center;
+	}
+	.discount-expiration .period {
+		margin: 0;
+	}
+
+	.discount-rule {
+		margin-top: 20px;
+		margin-left: 6px;
+		margin-right: 6px;
+		padding-bottom: 10px;
+		background: #FFF;
+		color: #333;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		text-align: left;
+	}
+	.discount-rule .title {
+		background: #FFEB9D;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.discount-rule .list {
+		margin: 0 10px;
+		padding-left: 20px;
+		list-style-type: circle;
+	}
+
+	.discount-btn-group {
+		padding: 8px;
+	}
+
+	.discount-kakaku-group {
+		padding-left: 20px;
+	}
+	.discount-minute {
+		color: red;
+		font-size: 24px;
+	}
+	.discount-prev-price {
+		color: lightgray;
+		margin-left: 5px;
+		margin-top: 8px;
+		font-size: 16px;
+	}
+	.discount-new-price {
+		color: red;
+		margin-left: 5px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.discount-header {
+		padding-bottom: 5px !important;
+	}
+
+	.discount-status {
+		padding-top: 3px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 3px;
+		margin-right: 6px;
+	}
+
+	.discount-title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.discount-price-group {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.discount-price {
+		padding-top: 10px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		text-align: left;
+	}
+
+	.discount-kakaku-img {
+		width: 50px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+
+	.discount-kakaku-info {
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+	.discount-kakaku-info small {
+		font-size: 10px;
+	}
+	.discount-kakaku-info span {
+		padding-top: 5px;
+		font-weight: bold;
+	}
+
+	.discount-expiration {
+		margin-top: 10px;
+		margin-left: 6px;
+		margin-right: 6px;
+		height: 50px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		color: #000;
+	}
+	.discount-expiration div {
+		display: table-cell;
+		vertical-align: middle;
+		height: 50px;
+		padding: 0px 10px;
+	}
+	.discount-expiration .label {
+		min-width: 60px;
+		border-right: 1px dotted #CCC;
+		color: inherit;
+		font-size: 14px;
+		font-weight: inherit;
+		text-align: center;
+	}
+	.discount-expiration .period {
+		margin: 0;
+	}
+
+	.discount-rule {
+		margin-top: 20px;
+		margin-left: 6px;
+		margin-right: 6px;
+		padding-bottom: 10px;
+		background: #FFF;
+		color: #333;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		text-align: left;
+	}
+	.discount-rule .title {
+		background: #FFEB9D;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.discount-rule .list {
+		margin: 0 10px;
+		padding-left: 20px;
+		list-style-type: circle;
+	}
+
+	.discount-btn-group {
+		padding: 8px;
+	}
+
+	.discount-kakaku-group {
+		padding-left: 10px;
+	}
+	.discount-minute {
+		color: red;
+		font-size: 16px;
+	}
+	.discount-prev-price {
+		color: lightgray;
+		margin-left: 5px;
+		margin-top: 8px;
+		font-size: 12px;
+	}
+	.discount-new-price {
+		color: red;
+		margin-left: 5px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.discount-price-group {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.discount-price {
+		padding-top: 10px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		text-align: left;
+	}
+
+	.discount-kakaku-img {
+		width: 50px;
+		margin-left: 10px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+
+	.discount-kakaku-info {
+		margin-left: 10px;
+		padding-top: 5px;
+	}
+	.discount-kakaku-info small {
+		font-size: 10px;
+	}
+	.discount-kakaku-info span {
+		padding-top: 0px;
+		font-weight: 700;
+	}
+
+	.discount-expiration {
+		margin-top: 10px;
+		margin-left: -9px;
+		margin-right: -9px;
+		height: 50px;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		background: #FFF;
+		color: #000;
+	}
+
+	.discount-rule {
+		margin-top: 20px;
+		margin-left: -9px;
+		margin-right: -9px;
+		padding-bottom: 10px;
+		background: #FFF;
+		color: #333;
+		border: 1px solid #FFAA00;
+		border-radius: 4px;
+		text-align: left;
+	}
+
+	.discount-kakaku-group {
+		padding-left: 15px;
+	}
+	.discount-minute {
+		color: red;
+		font-size: 14px;
+	}
+	.discount-prev-price {
+		color: lightgray;
+		margin-left: 5px;
+		margin-top: 8px;
+		font-size: 10px;
+	}
+	.discount-new-price {
+		color: red;
+		margin-left: 5px;
+		font-size: 14px;
+	}
+}
