@@ -240,3 +240,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('ajax/transfer/doFinish', [\App\Http\Controllers\TransferController::class, 'ajax_doFinish']);
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
