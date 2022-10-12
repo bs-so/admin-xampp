@@ -259,7 +259,7 @@ return [
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
     'password_email_url' => 'password/email',
-    'profile_url' => false,
+    'profile_url' => 'profile',
 
     /*
     |--------------------------------------------------------------------------
@@ -302,6 +302,72 @@ return [
         ],
 
         // Sidebar items:
+        [
+            'type' => 'sidebar-menu-search',
+            'text' => 'search',
+        ],
+        [
+            'text' => 'ホーム',
+            'url'  => 'home',
+            'icon' => 'fas fa-fw fa-home',
+        ],
+        [
+            'text' => '基本設定',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-cog',
+        ],
+        [
+            'text' => '閉店設定',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-times-circle',
+        ],
+        [
+            'text' => 'ゲーム設定',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text' => '管理者',
+            'icon' => '',
+            'submenu' => [
+                [
+                    'text' => 'アカウント管理',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-user-secret',
+                ],
+                [
+                    'text' => '管理者残高一覧',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-money-bill-alt',
+                ],
+                [
+                    'text' => '送金管理',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-retweet',
+                ],
+            ],
+        ],
+        [
+            'text' => 'ユーザー',
+            'icon' => '',
+            'submenu' => [
+                [
+                    'text' => 'ユーザー管理',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-users',
+                ],
+                [
+                    'text' => '履歴確認',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-list',
+                ],
+            ],
+        ],
+        /*
+        //  AdminLTE導入時のデフォルト
+        //  言語ファイルは
+        //  resources\lang\vendor\adminlte\ja\adminlte.php
+        //  resources\lang\vendor\adminlte\ja\menu.php
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
@@ -383,6 +449,7 @@ return [
             'icon_color' => 'cyan',
             'url'        => '#',
         ],
+        */
     ],
 
     /*
